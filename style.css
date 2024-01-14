@@ -8,10 +8,22 @@ body {
 }
 
 .todo-card {
-    background-color: rgb(234, 209, 150);
+    background-color: rgb(228, 198, 129);
     border-radius: 10px;
     padding: 15px 30px;
     margin: 20px;
+}
+
+.todo-card input[type='text'] {
+    padding: 5px;
+    background-color: rgb(234, 209, 150);
+    border: 0;
+    border-radius: 5px;
+    width: 30%;
+    height: 1.2rem;
+    margin: 10px;
+    color: rgb(191, 49, 49);
+
 }
 
 #list {
@@ -19,12 +31,18 @@ body {
 }
 
 #list li {
-    border-radius: 10px;
+    padding: 5px;
+    border-radius: 5px;
     color: rgb(191, 49, 49);
 }
 
 #list li:nth-child(odd){
-    background-color: rgb(228, 198, 129);
+    background-color: rgb(234, 209, 150);
+}
+
+.selected {
+    color: #666666;
+    text-decoration-line: line-through;
 }
 
 .buttons {
@@ -33,7 +51,7 @@ body {
     justify-content: space-around;
 }
 
-.buttons button {
+button  {
     background-color: rgb(191, 49, 49);
     border-radius: 10px;
     color: rgb(234, 209, 150);
@@ -41,6 +59,6 @@ body {
     border: 1px solid #00000000;
 }
 
-.buttons button:hover {
+button:hover {
     background-color: rgb(85, 24, 24);
 }
