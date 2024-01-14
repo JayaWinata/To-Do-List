@@ -1,0 +1,46 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #7D0A0A;
+    margin: 0;
+    overflow: hidden;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.todo-card {
+    background-color: rgb(234, 209, 150);
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: 20px;
+}
+
+#list {
+    font-size: 1.2rem;
+}
+
+#list li {
+    border-radius: 10px;
+    color: rgb(191, 49, 49);
+}
+
+#list li:nth-child(odd){
+    background-color: rgb(228, 198, 129);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.buttons button {
+    background-color: rgb(191, 49, 49);
+    border-radius: 10px;
+    color: rgb(234, 209, 150);
+    padding: 10px;
+    border: 1px solid #00000000;
+}
+
+.buttons button:hover {
+    background-color: rgb(85, 24, 24);
+}
