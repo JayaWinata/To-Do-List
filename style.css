@@ -11,7 +11,7 @@ body {
     background-color: rgb(228, 198, 129);
     border-radius: 10px;
     padding: 15px 30px;
-    margin: 20px;
+    margin: 60px;
 }
 
 .todo-card input[type='text'] {
@@ -49,9 +49,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap-reverse;
 }
 
 button  {
+    flex: 30%;
+    margin: 10px;
     background-color: rgb(191, 49, 49);
     border-radius: 10px;
     color: rgb(234, 209, 150);
@@ -61,4 +64,14 @@ button  {
 
 button:hover {
     background-color: rgb(85, 24, 24);
+}
+
+@media (max-width: 650px) {
+    .todo-card {
+        margin: 30px;
+    }
+
+    .buttons button {
+        flex: 100%;
+    }
 }
