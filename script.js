@@ -52,7 +52,10 @@ function saveList() {
     localStorage.setItem('todos',JSON.stringify(todos));
 }
 
-document.getElementById('slButton').addEventListener('click',saveList)
+document.getElementById('slButton').addEventListener('click', () => {
+    saveList();
+    alert('To-Do List Saved');
+})
 
 function loadList() {
     if (localStorage.getItem('todos')) {
