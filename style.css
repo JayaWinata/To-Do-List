@@ -41,8 +41,8 @@ body {
 }
 
 .selected {
-    color: #666666;
-    text-decoration-line: line-through;
+    text-decoration: line-through;
+    text-decoration-style: double;
 }
 
 .buttons {
